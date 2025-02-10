@@ -21,8 +21,3 @@ checking if the date is the same as today: https://stackoverflow.com/questions/8
 disable drop down : https://stackoverflow.com/questions/13149228/disable-drop-down-options-once-chosen-in-other-dropdown
 
 
-Link to the video: 
-https://youtu.be/RvLumM6aFaE
-
-I tried my best to implement this application, but it was really challenging. 
-Unfortunately, I was not able to complete the last part involving local storage.
