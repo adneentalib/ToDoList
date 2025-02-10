@@ -1,0 +1,222 @@
+body {
+    background-color: #f4f4f4; /* Light gray background for the overall page */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* standard Arial Font throughout */
+}
+
+#textbox {
+    width: 90%; 
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 50px auto 0; 
+    padding: 20px;
+    background-color: white; /* White background for the to-do list */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow  */
+    border-radius: 8px; /* Rounded corners */
+}
+
+h1 {
+    font-size: 2em; /* Main heading size for the title */
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+#row, #task-row {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out elements within the rows */
+    border-radius: 30px;
+    padding: 10px; 
+}
+
+#name, #task, #dropdown, #date {
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Rounded corners*/
+    padding: 10px;
+    margin-right: 10px; /* Small right margin between elements */
+}
+
+#name {
+    flex: 14; 
+}
+
+#add-button {
+    flex: 1; 
+}
+
+#clear-button {
+    flex: 1; 
+}
+
+#task {
+    flex: 6; 
+}
+
+#dropdown {
+    flex: 3; 
+}
+
+#date {
+    flex: 3; 
+}
+
+#assign-button {
+    flex: 1; 
+}
+
+#add-button, #assign-button {
+    border: none; /* No border for buttons */
+    border-radius: 4px; 
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px;
+    cursor: pointer; 
+    font-size: 1em; 
+}
+
+#add-button:hover, #assign-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button {
+    font-size: 0.81em; /* Slightly smaller font for buttons */
+}
+
+.line {
+    width: 100%; /* Full-width horizontal line */
+    height: 47px; /* Small height for visual separation */
+    border-bottom: 1px solid #f4f4f4; /* Light gray border for the line */
+}
+
+.tasklist {
+    width: 100%;
+    height: 300px; /* Set height for the task list area */
+    background-color: white; /* White background for the task list section */
+    margin-top: 10px; /* Small margin above the task list */
+}
+
+.tasksection1 {
+    width: 100%;
+    height: 130px; /* Height for the first task section */
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 4px; /* Slightly rounded corners for task sections */
+    background-color: white; /* White background to separate from the rest */
+}
+
+.tasksection2, .tasksection3 {
+    width: 100%;
+    height: 80px; /* Smaller height for the other task sections */
+    box-sizing: border-box; 
+    padding: 10px; 
+    border-radius: 4px;
+    align-items: center; 
+    justify-content: center; 
+    background-color: white;
+}
+
+.personname {
+    width: 100%;
+    height: 33px; /* Height for teammate's name section */
+    background-color: white;
+    display: flex;
+    align-items: center; /* Vertically center name */
+    justify-content: center; /* Horizontally center name */
+}
+
+.personname_h2 {
+    color: black; /* Standard black color for the teammate's name */
+    font-size: 1.17em; /* Slightly larger font for emphasis */
+    font-weight: bold; /* Bold for better visibility */
+}
+
+.task1, .task2 {
+    width: 100%;
+    height: 40px; /* Standard height for each task */
+    background-color: #f4f4f4; /* Light gray background for individual tasks */
+    display: flex; 
+    justify-content: space-between; /* Spread out task details */
+    align-items: center; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    border-radius: 4px;
+    margin-bottom: 7px; /* Small space between each task */
+}
+
+.due-date {
+    display: flex;
+    align-items: center; /* Align the due date elements vertically */
+}
+
+.due-date .due-text {
+    margin-right: 5px; /* Small space between text and checkbox */
+}
+
+.due-date input[type="checkbox"] {
+    margin-left: 5px; /* Space between text and checkbox */
+}
+
+.instruction, .doneby {
+    font-size: 1em; /* Standard font size for task instructions */
+}
+
+.bottom {
+    width: auto; 
+    height: auto; 
+    background-color: white; 
+    margin: 10px auto; 
+    padding: 10px; 
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+.clear-button, .reset-button {
+    border: none; /* No border for the buttons */
+    border-radius: 4px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer; 
+    font-size: 0.81em;
+    white-space: nowrap; /* Prevent buttons from breaking into multiple lines */
+}
+
+.clear-button {
+    background-color: #64d05e; /* Green background for the clear button */
+}
+
+.clear-button:hover {
+    background-color: #4ea649; /* Darker green on hover */
+}
+
+.reset-button {
+    background-color: #c3c3c3; /* Light gray background for the reset button */
+}
+
+.reset-button:hover {
+    background-color: #8f8f8f; /* Darker gray on hover */
+}
+
+@media (max-width: 600px) {
+    #textbox {
+        width: 95%; /* Adjusted width for smaller screens */
+    }
+
+    #row, #task-row {
+        flex-direction: column; /* Stack rows vertically on mobile */
+        align-items: stretch; 
+    }
+
+    #name, #task, #dropdown, #date, #add-button, #assign-button, .clear-button, .reset-button {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 10px; /* Add margin between stacked elements */
+    }
+
+    .bottom {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center buttons horizontally */
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ToDoList.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Main container for the to-do list application -->
+    <div id="textbox">
+        <h1>To-Do List</h1>
+        <!-- Input row for adding a teammate -->
+        <div id="row">
+            <input type="text" id="name" placeholder="Teammate Name">
+            <button id="add-button">Add</button>
+        </div>
+        <!-- Section for assigning tasks and selecting options -->
+        <div id="task-row">
+            <select id="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <input type="text" id="task" placeholder="Task">
+            <input type="date" id="date">
+            <button id="assign-button">Assign</button>
+        </div>
+        <div class="line"></div> 
+        <!-- Display the list of tasks assigned to each teammate -->
+        <div class="tasklist">
+            <!-- Section for tasks assigned to Arnavi -->
+            <div class="tasksection1">
+                <div class="personname"> 
+                    <span class="personname_h2">Arnavi</span>
+                </div>
+                <div class="task1">
+                    <span class="instruction">Set up Flask server</span>
+                    <div class="due-date">
+                        <span class="due-text">Due: 2099-10-01</span>
+                        <input type="checkbox" id="task1-check">
+                    </div>
+                </div>
+                <div class="task2">
+                    <span class="instruction">Set up Git repo</span>
+                    <div class="due-date">
+                        <span class="due-text">Due: 2099-10-01</span>
+                        <input type="checkbox" id="task2-check">
+                    </div>
+                </div>
+            </div>
+            <!-- Section for tasks assigned to Laura -->
+            <div class="tasksection2">
+                <div class="personname"> 
+                    <span class="personname_h2">Laura</span>
+                </div>
+                <div class="task1">
+                    <span class="instruction">Draft weekly plan</span>
+                    <div class="due-date">
+                        <span class="due-text">Due: 2099-09-28</span>
+                        <input type="checkbox" id="task3-check">
+                    </div>
+                </div>
+            </div>
+            <!-- Section for tasks assigned to Leo -->
+            <div class="tasksection3">
+                <div class="personname"> 
+                    <span class="personname_h2">Leo</span>
+                </div>
+                <div class="task1">
+                    <span class="instruction">Survey existing apps</span>
+                    <div class="due-date">
+                        <span class="due-text">Due: 2099-09-28</span>
+                        <input type="checkbox" id="task4-check">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div> 
+        <!-- Bottom section for clearing or resetting tasks -->
+        <div class="bottom"> 
+            <button class="clear-button" class="clear-button">Clear Completed</button>
+            <button class="reset-button">Reset</button>
+        </div>
+    </div> 
+</body>
+</html>
