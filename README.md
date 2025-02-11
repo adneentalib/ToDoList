@@ -1,6 +1,4 @@
-=============================
-#To-Do List       
-=============================
+To-Do List       
 
 Welcome to the **To-Do List** project! This simple yet powerful app helps you and your teammates keep track of tasks in an organized way.
 
